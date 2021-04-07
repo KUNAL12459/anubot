@@ -7,7 +7,7 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
+    await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 
@@ -19,9 +19,6 @@ Add me to your group and play music freely!**
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/QueenArzoo/VCPlayBot")
-                  ],[
-                    InlineKeyboardButton(
                         "💬 Group", url="https://t.me/LaylaSupport"
                     ),
                     InlineKeyboardButton(
@@ -29,7 +26,8 @@ Add me to your group and play music freely!**
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/NishaPlayBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="t.me/{}?startgroup=true".format(
+                                context.bot.username)
                     )]
             ]
         ),
