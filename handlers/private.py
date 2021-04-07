@@ -23,7 +23,7 @@ To add in your group contact us at @LaylaSupport!**
                     ),
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LaylaList"
-                    )
+                    ),
                     InlineKeyboardButton(
                         "🌍 Music World", url="https://t.me/Girls_and_boys_Chatting"
                     )
