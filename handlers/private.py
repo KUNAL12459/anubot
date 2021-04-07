@@ -11,9 +11,9 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 
-I can play music in your group's voice call.).
+I can play music in your group's voice chat
 
-Add me to your group and play music freely!**
+To add in your group contact us at @LaylaSupport!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -24,10 +24,12 @@ Add me to your group and play music freely!**
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LaylaList"
                     )
+                    InlineKeyboardButton(
+                        "🌍 Music World", url="https://t.me/Girls_and_boys_Chatting"
+                    )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="t.me/{}?startgroup=true".format(
-                                context.bot.username)
+                        "➕ Add To Your Group ➕", url="https://t.me/AnushkaVCBot?startgroup=true"
                     )]
             ]
         ),
